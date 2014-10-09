@@ -100,3 +100,13 @@ class Inasistencia (models.models):
     justificado = models.BooleanField()
     fecha_de_inasistencia = models.DateField(required=True)
     
+#Clase alumno:
+class Alumno():
+    
+    # Atributos de la clase
+
+    usuario = models.CharField("Usuario")
+    contraseña = models.IntegerField("Contrasenia")
+    nombre = models.CharField("Nombre", max_length=100)
+    reincorporacion = models.IntegerField("Reincorporacion", max_length=2)
+    dni = models.IntegerField("Dni", max_length=100)
